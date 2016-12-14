@@ -40,6 +40,21 @@
     <input type="text" id="view" name="view" ng-model="ctrl.model.step.templates.view">
   </md-input-container>
 
+  <md-input-container class="md-block">
+    <label>Step Code</label>
+    <input type="text" id="view" name="view" ng-model="ctrl.model.step.activeCondition.stepCode">
+  </md-input-container>
+
+  <md-input-container class="md-block">
+    <label>Step Result Comparison Key</label>
+    <input type="text" id="view" name="view" ng-model="ctrl.model.step.activeCondition.key">
+  </md-input-container>
+
+  <md-input-container class="md-block">
+    <label>Step Comparison Value</label>
+    <input type="text" id="view" name="view" ng-model="ctrl.model.step.activeCondition.value">
+  </md-input-container>
+
 </div>
 
   <md-button type="submit" class="md-raised md-primary">{{ctrl.model.isNew ? 'Add' : 'Update'}} step</md-button>
